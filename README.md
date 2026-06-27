@@ -15,9 +15,13 @@ A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service wit
 
 ## Screenshot
 
+**Add-on Configuration Access**
+
 <img width="290" alt="image" src="https://raw.githubusercontent.com/macagua/volto-acumbamail/refs/heads/main/docs/docs/images/addon-configuration-acumbamail-icon.png">
 
 ---
+
+**Acumbamail Settings control panel**
 
 <img width="720" alt="image" src="https://raw.githubusercontent.com/macagua/volto-acumbamail/refs/heads/main/docs/docs/images/acumbamail-settings.png">
 
