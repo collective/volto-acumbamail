@@ -1,16 +1,25 @@
 {
-  "name": "volto-acumbamail-dev",
+  "name": "volto-acumbamail",
   "version": "1.0.0-alpha.1",
   "description": "A volto add-on that integrates Acumbamail service with Plone",
-  "author": "Leonardo J. Caballero G.",
-  "homepage": "https://github.com/collective/volto-acumbamail",
+  "main": "src/index.ts",
   "license": "MIT",
   "keywords": [
     "volto-addon",
     "volto",
     "plone",
-    "react"
+    "react",
+    "Acumbamail"
   ],
+  "author": "Leonardo J. Caballero G.",
+  "homepage": "https://github.com/collective/volto-acumbamail#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:collective/volto-acumbamail"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "start": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto start",
@@ -32,13 +41,21 @@
     "storybook": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto storybook dev -p 6006 -c $(pwd)/.storybook",
     "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
   },
+  "addons": [],
   "dependencies": {
     "@plone/volto": "workspace:*",
     "@plone/registry": "workspace:*",
     "volto-acumbamail": "workspace:*"
   },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@plone/registry": "workspace:*",
+    "@plone/types": "workspace:*"
+  },
   "devDependencies": {
-    "mrs-developer": "^2.2.0"
+    "mrs-developer": "^2.2.0",
+    "release-it": "^17.1.1"
   },
   "pnpm": {
     "overrides": {
