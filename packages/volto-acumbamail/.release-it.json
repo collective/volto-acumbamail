@@ -23,7 +23,6 @@
   "github": {
     "release": true,
     "releaseName": "${version}",
-    "releaseNotes": "cat .changelog.draft",
     "tokenRef": "GITHUB_TOKEN",
     "skipChecks": true
   }

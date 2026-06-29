@@ -1,6 +1,6 @@
 {
   "name": "volto-acumbamail-dev",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "A volto add-on that integrates Acumbamail service with Plone",
   "author": "Leonardo J. Caballero G.",
   "homepage": "https://github.com/collective/volto-acumbamail",
