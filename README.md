@@ -5,7 +5,7 @@
 [![Code analysis checks](https://github.com/collective/volto-acumbamail/actions/workflows/code.yml/badge.svg)](https://github.com/collective/volto-acumbamail/actions/workflows/code.yml)
 [![Unit tests](https://github.com/collective/volto-acumbamail/actions/workflows/unit.yml/badge.svg)](https://github.com/collective/volto-acumbamail/actions/workflows/unit.yml)
 
-[![Acumbamail](https://raw.githubusercontent.com/macagua/volto-acumbamail/refs/heads/main/docs/docs/_static/logo.svg)](https://acumbamail.com/)
+[![Acumbamail](https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/docs/_static/logo.svg)](https://acumbamail.com/)
 
 A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service with Plone
 
@@ -17,17 +17,17 @@ A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service wit
 
 **Add-on Configuration Access**
 
-<img width="290" alt="image" src="https://raw.githubusercontent.com/macagua/volto-acumbamail/refs/heads/main/docs/docs/images/addon-configuration-acumbamail-icon.png">
+<img width="290" alt="image" src="https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/docs/images/addon-configuration-acumbamail-icon.png">
 
 ---
 
 **Acumbamail Settings control panel**
 
-<img width="720" alt="image" src="https://raw.githubusercontent.com/macagua/volto-acumbamail/refs/heads/main/docs/docs/images/acumbamail-settings.png">
+<img width="720" alt="image" src="https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/docs/images/acumbamail-settings.png">
 
 ## Backend integration
 
-To use this product in Plone CMS, your Plone CMS project needs to include a new add-on: https://github.com/macagua/collective.volto.acumbamail
+To use this product in Plone CMS, your Plone CMS project needs to include a new add-on: https://github.com/collective/collective.volto.acumbamail
 
 ## Installation
 
@@ -260,6 +260,12 @@ In the third session, start the Cypress interactive test runner.
 ```shell
 make acceptance-test
 ```
+
+## Authors
+
+This product was developed by [Leonardo J. Caballero G.](https://github.com/macagua)
+
+<img width="100" alt="Leonardo J. Caballero G." src="https://avatars.githubusercontent.com/u/185395" title="Leonardo J. Caballero G.">
 
 ## License
 
