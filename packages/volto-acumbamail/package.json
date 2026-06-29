@@ -1,6 +1,6 @@
 {
   "name": "volto-acumbamail",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.1",
   "description": "A volto add-on that integrates Acumbamail service with Plone",
   "main": "src/index.ts",
   "license": "MIT",
