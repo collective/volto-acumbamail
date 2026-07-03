@@ -43,25 +43,16 @@
   },
   "addons": [],
   "dependencies": {
-    "@plone/volto": "workspace:*",
-    "@plone/registry": "workspace:*",
     "volto-acumbamail": "workspace:*"
   },
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@plone/registry": "workspace:*",
-    "@plone/types": "workspace:*"
+    "@plone/volto": ">=18.0.0"
   },
   "devDependencies": {
     "mrs-developer": "^2.2.0",
     "release-it": "^17.1.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
-      "react-refresh": "^0.14.2"
-    }
   },
   "packageManager": "pnpm@9.1.1"
 }
