@@ -24,7 +24,7 @@ author = "Leonardo J. Caballero G."
 trademark_name = "collective"
 now = datetime.now()
 year = str(now.year)
-copyright = year
+copyright = f"2025 - {year}"
 
 
 # The version info for the project you're documenting, acts as replacement for

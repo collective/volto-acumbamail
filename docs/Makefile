@@ -10,7 +10,7 @@ PAPER           ?=
 GREEN=`tput setaf 2`
 RESET=`tput sgr0`
 SPHINXBUILD     = "$(realpath .venv/bin/sphinx-build)"
-DOCS_DIR        = ./docs/
+DOCS_DIR        = ./source/
 BUILDDIR        = ./_build
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter

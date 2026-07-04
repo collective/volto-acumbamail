@@ -5,7 +5,7 @@
 [![Code analysis checks](https://github.com/collective/volto-acumbamail/actions/workflows/code.yml/badge.svg)](https://github.com/collective/volto-acumbamail/actions/workflows/code.yml)
 [![Unit tests](https://github.com/collective/volto-acumbamail/actions/workflows/unit.yml/badge.svg)](https://github.com/collective/volto-acumbamail/actions/workflows/unit.yml)
 
-[![Acumbamail](https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/docs/_static/logo.svg)](https://acumbamail.com/)
+[![Acumbamail](https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/source/_static/logo.svg)](https://acumbamail.com/)
 
 A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service with Plone
 
@@ -17,13 +17,13 @@ A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service wit
 
 **Add-on Configuration Access**
 
-<img width="290" alt="image" src="https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/docs/images/addon-configuration-acumbamail-icon.png">
+<img width="290" alt="image" src="https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/source/images/addon-configuration-acumbamail-icon.png">
 
 ---
 
 **Acumbamail Settings control panel**
 
-<img width="720" alt="image" src="https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/docs/images/acumbamail-settings.png">
+<img width="720" alt="image" src="https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/source/images/acumbamail-settings.png">
 
 ## Backend integration
 
