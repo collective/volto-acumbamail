@@ -54,7 +54,7 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/collective/voltoacumbamail"
+Repository = "https://github.com/collective/volto-acumbamail"
 Documentation = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io/"
 
 [build-system]
