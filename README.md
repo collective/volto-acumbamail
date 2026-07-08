@@ -11,7 +11,7 @@ A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service wit
 
 ## Features
 
-- Add a new subscriber to the Acumbamail list.
+- Add a new `Acumbamail Settings` Volto control panel.
 
 ## Screenshot
 
