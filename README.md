@@ -7,7 +7,7 @@
 
 [![Acumbamail](https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/source/_static/logo.svg)](https://acumbamail.com/)
 
-A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service with Plone
+A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service with Plone.
 
 ## Features
 
