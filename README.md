@@ -261,16 +261,24 @@ In the third session, start the Cypress interactive test runner.
 make acceptance-test
 ```
 
+## Credits
+
+Developed with the support of:
+
+- [Instituto Municipal de Deportes - IMD, Seville City Council, Spain](https://imd.sevilla.org/).
+
+  <img width="200" alt="image" src="https://raw.githubusercontent.com/collective/volto-acumbamail/refs/heads/main/docs/images/imd-ayto-logo.svg" alt="IMD Logo">
+
+### Acknowledgements 🙏
+
+Generated using [Cookieplone (0.9.10)](https://github.com/plone/cookieplone) and [cookieplone-templates (eb40854)](https://github.com/plone/cookieplone-templates/commit/eb4085428af6261227bcb086ece110bbe5475d89) on 2025-11-06 19:31:17.502224. A special thanks to all contributors and supporters!
+
 ## Authors
 
-This product was developed by [Leonardo J. Caballero G.](https://github.com/macagua)
+This product was developed by [Leonardo J. Caballero G.](https://github.com/macagua).
 
-<img width="100" alt="Leonardo J. Caballero G." src="https://avatars.githubusercontent.com/u/185395" title="Leonardo J. Caballero G.">
+<img width="100" alt="Leonardo J. Caballero G." src="https://avatars.githubusercontent.com/u/185395?v=4&size=100" />
 
 ## License
 
 The project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-## Credits and acknowledgements 🙏
-
-Generated using [Cookieplone (0.9.10)](https://github.com/plone/cookieplone) and [cookieplone-templates (eb40854)](https://github.com/plone/cookieplone-templates/commit/eb4085428af6261227bcb086ece110bbe5475d89) on 2025-11-06 19:31:17.502224. A special thanks to all contributors and supporters!
