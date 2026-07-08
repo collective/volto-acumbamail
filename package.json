@@ -9,7 +9,8 @@
     "volto",
     "plone",
     "react",
-    "Acumbamail"
+    "Acumbamail",
+    "integration"
   ],
   "author": "Leonardo J. Caballero G.",
   "homepage": "https://github.com/collective/volto-acumbamail#readme",

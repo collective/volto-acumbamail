@@ -2,8 +2,10 @@
 name = "Volto_Acumbamail_Documentation"
 description = "A volto add-on that integrates Acumbamail service with Plone"
 keywords = [
-    "Volto Acumbamail",
+    "Acumbamail",
+    "integration",
     "documentation",
+    "Volto",
     "Plone",
     "Diátaxis",
 ]
