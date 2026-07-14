@@ -27,6 +27,8 @@
     "tagAnnotation": "Release ${version}"
   },
   "github": {
-    "release": false
+    "release": true,
+    "releaseName": "${version}",
+    "releaseNotes": "cat .changelog.draft"
   }
 }
