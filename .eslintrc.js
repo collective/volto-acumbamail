@@ -30,7 +30,7 @@ module.exports = {
           ['@plone/registry', `${coreLocation}/packages/registry/src`],
           [
             'volto-acumbamail',
-            './packages/volto-acumbamail/src',
+            './src',
           ],
           ...addonAliases,
         ],

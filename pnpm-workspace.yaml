@@ -3,3 +3,12 @@ packages:
   - 'core/packages/*'
   - 'packages/*'
   - 'packages/*/packages/*'
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: true
+  cypress: true
+  es5-ext: true
+  esbuild: true
+  lightningcss-cli: true
+  unrs-resolver: true
+  why: true
