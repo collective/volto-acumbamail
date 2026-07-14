@@ -2,6 +2,8 @@
   "name": "volto-acumbamail",
   "version": "1.0.0-alpha.1",
   "description": "A volto add-on that integrates Acumbamail service with Plone",
+  "author": "Leonardo J. Caballero G.",
+  "homepage": "https://github.com/collective/volto-acumbamail#readme",
   "main": "src/index.ts",
   "license": "MIT",
   "keywords": [
@@ -12,8 +14,6 @@
     "Acumbamail",
     "integration"
   ],
-  "author": "Leonardo J. Caballero G.",
-  "homepage": "https://github.com/collective/volto-acumbamail#readme",
   "repository": {
     "type": "git",
     "url": "git@github.com:collective/volto-acumbamail.git"
@@ -29,12 +29,12 @@
     "build:deps": "pnpm --filter @plone/registry --filter @plone/components build",
     "i18n": "pnpm --filter volto-acumbamail i18n && VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto i18n",
     "test": "RAZZLE_JEST_CONFIG=$(pwd)/jest-addon.config.js pnpm --filter @plone/volto test -- --passWithNoTests",
-    "lint": "VOLTOCONFIG=$(pwd)/volto.config.js eslint --max-warnings=0 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "VOLTOCONFIG=$(pwd)/volto.config.js eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "prettier": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
-    "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}' ",
-    "stylelint": "stylelint 'src/**/*.{css,scss,less}' --allow-empty-input",
-    "stylelint:fix": "stylelint 'src/**/*.{css,scss,less}' --fix --allow-empty-input",
+    "lint": "VOLTOCONFIG=$(pwd)/volto.config.js eslint --max-warnings=0 'packages/**/src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "VOLTOCONFIG=$(pwd)/volto.config.js eslint --fix 'packages/**/src/**/*.{js,jsx,ts,tsx}'",
+    "prettier": "prettier --check 'packages/**/src/**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write 'packages/**/src/**/*.{js,jsx,ts,tsx}' ",
+    "stylelint": "stylelint 'packages/**/src/**/*.{css,scss,less}' --allow-empty-input",
+    "stylelint:fix": "stylelint 'packages/**/src/**/*.{css,scss,less}' --fix --allow-empty-input",
     "dry-release": "pnpm --filter volto-acumbamail dry-release",
     "release": "pnpm --filter volto-acumbamail release",
     "release-major-alpha": "pnpm --filter volto-acumbamail release-major-alpha",
