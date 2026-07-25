@@ -27,7 +27,7 @@ A volto add-on that integrates [Acumbamail](https://acumbamail.com/) service wit
 
 ## Backend integration
 
-To use this product in Plone CMS, your Plone CMS project needs to include a new add-on: https://github.com/collective/collective.volto.acumbamail
+To use this product in Plone CMS, you needs to include the following add-on in your project: https://github.com/collective/collective.volto.acumbamail
 
 ## Installation
 

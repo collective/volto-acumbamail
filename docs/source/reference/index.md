@@ -1,23 +1,24 @@
 ---
 myst:
   html_meta:
-    "description": "Volto Acumbamail Reference"
-    "property=og:description": "Volto Acumbamail Reference"
-    "property=og:title": "Volto Acumbamail Reference"
-    "keywords": "Plone, _Volto Acumbamail,_ reference"
+    "description": "Acumbamail Volto Reference"
+    "property=og:description": "Acumbamail integration with Volto Reference"
+    "property=og:title": "Acumbamail integration with Volto Reference"
+    "keywords": "Acumbamail, service, Volto, integration, documentation, reference"
 ---
 
-# Reference
+# General resources
 
 This part of the documentation contains reference material, including APIs, configuration values, and environment variables.
 
-> Reference guides are technical descriptions of the machinery and how to operate it.
-> Reference material is information-oriented.
+## Acumbamail
 
-```{seealso}
-https://diataxis.fr/reference/
-```
+-   [Home page](https://acumbamail.com/).
 
-## Configuration
+-   [Official API Acumbamail Documentation](https://acumbamail.com/apidoc/).
 
--   {doc}`plone:contributing/documentation/themes-and-extensions`
+-   The [addSubscriber](https://acumbamail.com/apidoc/function/addSubscriber/), is the Acumbamail endpoints that using.
+
+## Plone CMS
+
+-   [collective.volto.acumbamail](https://github.com/collective/collective.volto.acumbamail) add-on.

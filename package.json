@@ -7,10 +7,11 @@
   "main": "src/index.ts",
   "license": "MIT",
   "keywords": [
+    "CMS",
+    "Plone",
     "volto-addon",
-    "volto",
-    "plone",
-    "react",
+    "Volto",
+    "React",
     "Acumbamail",
     "integration"
   ],

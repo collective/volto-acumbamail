@@ -1,13 +1,13 @@
 # Configuration file for the Sphinx documentation builder.
-# Volto Acumbamail build configuration file
+# Acumbamail integration with Volto build configuration file
 
 
 # -- Path setup --------------------------------------------------------------
 
 from datetime import datetime
-
 from packaging.version import Version
 from plone_sphinx_theme import __version__
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -19,12 +19,12 @@ from plone_sphinx_theme import __version__
 
 # -- Project information -----------------------------------------------------
 
-project = "Volto Acumbamail"
+project = "Acumbamail integration with Volto"
 author = "Leonardo J. Caballero G."
 trademark_name = "collective"
 now = datetime.now()
 year = str(now.year)
-copyright = f"2025 - {year}"
+copyright = f"2025 - {year}"  # noqa: A001
 
 
 # The version info for the project you're documenting, acts as replacement for
@@ -95,13 +95,14 @@ linkcheck_ignore = [
     # Ignore file downloads
     r"^/_static/",
     # Ignore pages that require authentication
-    r"https://github.com/collective/voltoacumbamail/issues/new",  # requires auth
+    r"https://github.com/collective/volto-acumbamail/issues/new",  # requires auth
     # Ignore github.com pages with anchors
     r"https://github.com/.*#.*",
     # Ignore other specific anchors
 ]
 linkcheck_allowed_redirects = {  # TODO: Confirm usage of linkcheck_allowed_redirects
-    # All HTTP redirections from the source URI to the canonical URI will be treated as "working".
+    # All HTTP redirections from the source URI to the canonical URI will be treated
+    # as "working".
 }
 linkcheck_anchors = True
 linkcheck_timeout = 5
@@ -131,7 +132,8 @@ suppress_warnings = []
 html_theme = "plone_sphinx_theme"  # This can be configured
 html_logo = "_static/logo.svg"
 html_favicon = "_static/favicon.ico"
-# The default value includes icon-links, so override it with that one omitted, and add it to html_theme_options[footer_content_items].
+# The default value includes icon-links, so override it with that one omitted,
+# and add it to html_theme_options[footer_content_items].
 html_sidebars = {
     "**": [
         "navbar-logo",
@@ -141,8 +143,10 @@ html_sidebars = {
 }
 html_theme_options = {
     "article_header_start": ["toggle-primary-sidebar"],
-    # "extra_footer": """<p>Example `extra_footer` content. License info. Trademark info and usage.</p>
-    # <p>Pull request previews by <a href="https://readthedocs.org/">Read the Docs</a>.</p>""",
+    # "extra_footer": """<p>Example `extra_footer` content. License info.
+    # Trademark info and usage.</p>
+    # <p>Pull request previews by <a href="https://readthedocs.org/">Read
+    # the Docs</a>.</p>""",
     "footer_content_items": [
         "author",
         "copyright",
@@ -155,7 +159,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/collective/voltoacumbamail",
+            "url": "https://github.com/collective/volto-acumbamail",
             "icon": "fa-brands fa-square-github",
             "type": "fontawesome",
             "attributes": {
@@ -177,12 +181,12 @@ html_theme_options = {
         # },
     ],
     "logo": {
-        "text": "Volto Acumbamail",
+        "text": "Acumbamail integration with Volto",
     },
     "navigation_with_keys": True,
     "path_to_docs": "docs/docs",
     "repository_branch": "main",
-    "repository_url": "https://github.com/collective/voltoacumbamail",
+    "repository_url": "https://github.com/collective/volto-acumbamail",
     "search_bar_text": "Search",
     "show_toc_level": 2,
     "use_edit_page_button": True,
@@ -192,12 +196,12 @@ html_theme_options = {
 # suggest edit link
 # remark:  is mandatory in "edit_page_url_template"
 # html_context = {
-#     "edit_page_url_template": "https://github.com/collective/voltoacumbamail/edit/main/docs/",
+#     "edit_page_url_template": "https://github.com/collective/volto-acumbamail/edit/main/docs/",
 # }
 
 # Announce that we have an opensearch plugin
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_use_opensearch
-html_use_opensearch = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io"
+html_use_opensearch = "https://volto-acumbamail.readthedocs.io"
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -235,7 +239,7 @@ autodoc_class_signature = "separated"
 # -- Options for sphinx_sitemap to html -----------------------------
 
 # Used by sphinx_sitemap to generate a sitemap
-html_baseurl = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io/"
+html_baseurl = "https://volto-acumbamail.readthedocs.io/"
 # https://sphinx-sitemap.readthedocs.io/en/latest/advanced-configuration.html#customizing-the-url-scheme
 sitemap_url_scheme = "{link}"
 sitemap_filename = "sitemap-custom.xml"
@@ -247,7 +251,7 @@ sitemap_filename = "sitemap-custom.xml"
 myst_enable_extensions = [
     "attrs_block",  # Support parsing of block attributes.
     "attrs_inline",  # Support parsing of inline attributes.
-    "colon_fence",  # You can also use ::: delimiters to denote code fences, instead of ```.
+    "colon_fence",  # You can also use ::: delimiters to denote code fences, instead of ```.  ## noqa: E501
     "deflist",  # Support definition lists. https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists
     "html_image",  # For inline images. See https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#html-images
     "linkify",  # Identify "bare" web URLs and add hyperlinks.
@@ -283,10 +287,10 @@ mermaid_version = "11.2.0"
 
 
 # -- OpenGraph configuration ----------------------------------
-ogp_site_url = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io/"
+ogp_site_url = "https://volto-acumbamail.readthedocs.io/"
 ogp_description_length = 200
-ogp_image = "https://MY_READTHEDOCS_PROJECT_SLUG/_static/MY_LOGO.svg"
-ogp_site_name = "Volto Acumbamail Documentation"
+ogp_image = "https://volto-acumbamail/en/latest/_static/logo.svg"
+ogp_site_name = "Acumbamail integration with Volto Documentation"
 ogp_type = "website"
 ogp_custom_meta_tags = [
     '<meta property="og:locale" content="en_US" />',

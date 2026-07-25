@@ -2,18 +2,134 @@
 myst:
   html_meta:
     "description": "Volto Acumbamail Tutorials"
-    "property=og:description": "Volto Acumbamail Tutorials"
-    "property=og:title": "Volto Acumbamail Tutorials"
-    "keywords": "Plone, Volto Acumbamail, tutorials"
+    "property=og:description": "Acumbamail integration with Volto Tutorials"
+    "property=og:title": "Acumbamail integration with Volto Tutorials"
+    "keywords": "Acumbamail, service, Volto, integration, documentation, tutorials"
 ---
 
-# Tutorials
+# Custom REST services
 
-This part of the documentation contains tutorials.
+Plone can expose specific endpoints for Volto. These services encapsulate
+the logic for communicating with `Acumbamail` and provide a standardised format
+for the front end.
 
-> A tutorial is an experience that takes place under the guidance of a tutor.
-> A tutorial is always learning-oriented.
+---
 
-```{seealso}
-https://diataxis.fr/tutorials/
+(acumbamail-settings-route)=
+## @acumbamail-settings route
+
+Anonymous users can't access registry resources by default with ``plone.restapi`` (there is a special permission).
+
+To avoid enabling registry access to everyone, this package exposes a dedicated RestApi route with ``Acumbamail`` settings: *@acumbamail-settings*:
+
+Get the information from the ``Acumbamail`` settings via `curl` command:
+
+```shell
+curl -X GET http://localhost:8080/Plone/@controlpanels/acumbamail-settings \
+  -H "Accept: application/json" \
+  --user admin:admin
 ```
+
+This route returns a JSON object containing the ``Acumbamail`` settings and data via `curl` command:
+
+```json
+{
+  "@id": "http://localhost:8080/Plone/@controlpanels/acumbamail-settings",
+  "data": {
+    "api_key": null,
+    "api_url": null,
+    "list_id": null
+  },
+  "group": "Add-on Configuration",
+  "schema": {
+    "fieldsets": [
+      {
+        "behavior": "plone",
+        "description": "",
+        "fields": [
+          "api_url",
+          "api_key",
+          "list_id"
+        ],
+        "id": "general",
+        "title": "General settings"
+      }
+    ],
+    "properties": {
+      "api_key": {
+        "description": "Your Acumbamail personal token (https://acumbamail.com/api/)",
+        "factory": "Text line (String)",
+        "title": "API Key",
+        "type": "string"
+      },
+      "api_url": {
+        "description": "The URL of the Acumbamail API endpoint.",
+        "factory": "Text line (String)",
+        "title": "API URL",
+        "type": "string"
+      },
+      "list_id": {
+        "description": "Numeric identifier of the list where subscribers will be added.",
+        "factory": "Text line (String)",
+        "title": "List ID",
+        "type": "string"
+      }
+    },
+    "required": [
+      "api_url",
+      "api_key",
+      "list_id"
+    ],
+    "type": "object"
+  },
+  "title": "Acumbamail Settings"
+}
+```
+
+Below is a `PATCH` operation to set up the `api_url`, `api_key` and `list_id` fields values of the
+``Acumbamail`` settings:
+
+```shell
+curl -i -X PATCH http://localhost:8080/Plone/@controlpanels/acumbamail-settings \
+  -H "Accept: application/json" \
+  -H "Content-Type: application/json" \
+  --data '{"api_url": "https://acumbamail.com/api/1/addSubscriber", "api_key": "204615m3a78w2fgt3t1nm34567890123", "list_id": "4702726"}' \
+  --user admin:admin
+```
+
+This route returns a HTTP response:
+
+```shell
+HTTP/1.1 204 No Content
+Connection: close
+Date: Sat, 25 Jul 2026 10:00:18 GMT
+Server: waitress
+Via: waitress
+X-Powered-By: Zope (www.zope.dev), Python (www.python.org)
+```
+
+That means you were updated the values in the ``Acumbamail`` settings control panel fields correctly!
+
+**NOTE:** You can validate the update operation, going to ``Site setup > Add-on settings > Acumbamail settings``.
+
+---
+
+(acumbamail-subscribe-route)=
+## @acumbamail-subscribe route
+
+Anonymous users can't access registry resources by default with ``plone.restapi`` (there is a special permission).
+
+To avoid enabling registry access to everyone, this package exposes a dedicated RestApi route called
+`@acumbamail-subscribe`, below is a `POST` operation to add a new subscriber to the mailing list:
+
+```shell
+curl -i -X POST http://localhost:8080/Plone/@acumbamail-subscribe \
+  -H "Accept: application/json" \
+  -H "Accept-Language: es" \
+  --data '{"email": "user@example.com"}' \
+  --user admin:admin
+```
+
+This `route` can be used in for a _Volto integration_ form componet.
+
+**NOTE:** You can validate the add operation, going to your ``Acumbamail`` Dashboard account.

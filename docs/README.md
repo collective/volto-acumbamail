@@ -1,7 +1,6 @@
-# Volto Acumbamail
+# volto-acumbamail Documentation
 
-Documentation for Volto Acumbamail.
-A volto add-on that integrates Acumbamail service with Plone
+Documentation for the `Acumbamail` integration with Volto.
 
 This project provides a Sphinx-based documentation environment for your Plone project, powered by the [Plone Sphinx Theme](https://github.com/plone/plone-sphinx-theme).
 It's generated using the `documentation_starter` template from [Cookieplone](https://github.com/plone/cookieplone).
@@ -59,7 +58,7 @@ make help
 ```
 
 
-## Customize the Volto Acumbamail documentation
+## Customize the Acumbamail integration with Volto documentation
 
 This section provides how-to guidance to customize your documentation.
 
