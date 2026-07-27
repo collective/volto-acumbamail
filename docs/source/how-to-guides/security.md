@@ -9,8 +9,8 @@ myst:
 
 # Security access
 
-The `volto-acumbamail` add-on reusing the following roles and permissions from the
-[collective.volto.acumbamail](https://collectivevoltoacumbamail.readthedocs.io/) add-on :
+The {term}`volto-acumbamail` {term}`add-on` reusing the following roles and permissions from the
+{term}`collective.volto.acumbamail` {term}`add-on`:
 
 ## Roles
 

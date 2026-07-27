@@ -9,11 +9,11 @@ myst:
 
 # Acumbamail integration with Volto
 
-Welcome to the documentation for `Acumbamail` integration with Volto!
+Welcome to the documentation for `Acumbamail` integration with {term}`Volto`!
 
 <img width="400" alt="Acumbamail Logo" src="./_static/logo.svg">
 
-An integration for the `Acumbamail` service with Volto integration.
+An integration for the `Acumbamail` service with {term}`Volto` integration.
 
 ---
 
