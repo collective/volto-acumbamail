@@ -105,7 +105,7 @@ api_url
 API Key
 api_key
     The API Key is a secret token used to authenticate requests from {term}`Plone` to the {term}`Acumbamail` API.
-    It corresponds to the personal token available at [https://acumbamail.com/api/](https://acumbamail.com/api/).
+    It corresponds to the personal token available at [https://acumbamail.com/login/](https://acumbamail.com/login/).
     It must be stored only in the {term}`Plone` backend and never exposed to the {term}`Volto` frontend.
 
 List ID
