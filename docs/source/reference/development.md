@@ -9,7 +9,7 @@ myst:
 
 # Development
 
-The development of this add-on is done in isolation using a new approach using pnpm workspaces and latest `mrs-developer` and other Volto core improvements.
+The development of this  {term}`add-on` is done in isolation using a new approach using pnpm workspaces and latest `mrs-developer` and other Volto core improvements.
 For this reason, it only works with pnpm and {term}`Volto` 18 (currently in alpha).
 
 ## Prerequisites ✅

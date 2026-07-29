@@ -7,7 +7,7 @@ myst:
     "keywords": "Acumbamail, service, Volto, integration, documentation, glossary, term, definition"
 ---
 
-This glossary provides terms and definitions relevant to **Acumbamail integration with** {term}`Volto`.
+This glossary provides terms and definitions relevant to {term}`Acumbamail` integration with {term}`Volto`.
 
 (glossary-label)=
 
@@ -53,7 +53,8 @@ plone.restapi
     [plone.restapi](https://plonerestapi.readthedocs.io/) is the RESTful hypermedia API for {term}`Plone`.
     It enables {term}`Volto` and other clients to interact with {term}`Plone` content and configuration over HTTP using JSON.
     This {term}`add-on` registers its services and control panel adapters through ``plone.restapi``.
-    It is used by {term}`collective.volto.acumbamail` to expose the {term}`@acumbamail-settings` and {term}`@acumbamail-subscribe` endpoints to the {term}`Volto` frontend.
+    It is used by {term}`collective.volto.acumbamail` to expose the {term}`@acumbamail-settings` and {term}`@acumbamail-subscribe`
+    endpoints to the {term}`Volto` frontend.
 
 Control Panel
     Checkout the {term}`Acumbamail Settings` term.
@@ -121,14 +122,14 @@ list_id
 
 @acumbamail-subscribe
     A REST API endpoint exposed by {term}`collective.volto.acumbamail` that allows {term}`Volto` to add a new subscriber to the configured {term}`Acumbamail` list.
-    It wraps the [addSubscriber](https://acumbamail.com/apidoc/function/addSubscriber/) {term}`Acumbamail` API function.
+    It wraps the {term}`batchAddSubscribers` {term}`Acumbamail` API function.
 
     **Example:** Take a look to the {ref}`acumbamail-subscribe-route` section.
 
-addSubscriber
-    The {term}`Acumbamail` API function used to add a new contact to a mailing list.
+batchAddSubscribers
+    The {term}`Acumbamail` API function used to add a new subscriber to a mailing list.
 
-    **Tip:** More infomation checkout the official [addSubscriber/](https://acumbamail.com/apidoc/function/addSubscriber/) documentation.
+    **Tip:** More infomation checkout the official [batchAddSubscribers/](https://acumbamail.com/apidoc/function/batchAddSubscribers/) documentation.
 
 Subscriber
     A subscriber represents one contact registered in an {term}`Acumbamail` mailing list.
