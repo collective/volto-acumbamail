@@ -50,7 +50,7 @@ add-on
     -   [Add-ons tagged with the trove classifier `Framework :: Plone` on PyPI](https://pypi.org/search/?c=Framework+%3A%3A+Plone)
 
 plone.restapi
-    [plone.restapi](https://plonerestapi.readthedocs.io/) is the RESTful hypermedia API for {term}`Plone`.
+    [plone.restapi](https://6.docs.plone.org/plone.restapi/docs/source/) is the RESTful hypermedia API for {term}`Plone`.
     It enables {term}`Volto` and other clients to interact with {term}`Plone` content and configuration over HTTP using JSON.
     This {term}`add-on` registers its services and control panel adapters through ``plone.restapi``.
     It is used by {term}`collective.volto.acumbamail` to expose the {term}`@acumbamail-settings` and {term}`@acumbamail-subscribe`
@@ -83,11 +83,17 @@ collective.volto.acumbamail
     a mailing list, and a browser layer ({term}`IAcumbamailLayer`) to scope its components.
     It is designed to work together with the {term}`volto-acumbamail` {term}`Volto` {term}`add-on`.
 
+    ```{tip}
+    More infomation checkout the official [documentation](https://collectivevoltoacumbamail.readthedocs.io/en/latest/).
+    ```
+
 volto-acumbamail
     `volto-acumbamail` is the {term}`Volto` {term}`add-on` that integrates {term}`Acumbamail` sevice into a {term}`Plone` site via the {term}`collective.volto.acumbamail` {term}`add-on`.
     It provides a control panel to configure the target municipality.
 
-    **Tip:** More infomation checkout the official [documentation](https://volto-acumbamail.readthedocs.io/).
+    ```{tip}
+    More infomation checkout the official [documentation](https://volto-acumbamail.readthedocs.io/en/latest/).
+    ```
 
 IAcumbamailLayer
     ``IAcumbamailLayer`` is a browser layer marker interface provided by this {term}`add-on`.
@@ -118,18 +124,24 @@ list_id
     A REST API endpoint exposed by {term}`collective.volto.acumbamail` that provides the {term}`Acumbamail Settings` to the {term}`Volto` frontend.
     Anonymous users cannot access the {term}`Plone` registry directly, so this dedicated endpoint is used instead.
 
-    **Example:** Take a look to the {ref}`acumbamail-settings-route` section.
+    ```{note}
+    Take a look to the {ref}`acumbamail-settings-route` section.
+    ```
 
 @acumbamail-subscribe
     A REST API endpoint exposed by {term}`collective.volto.acumbamail` that allows {term}`Volto` to add a new subscriber to the configured {term}`Acumbamail` list.
     It wraps the {term}`batchAddSubscribers` {term}`Acumbamail` API function.
 
-    **Example:** Take a look to the {ref}`acumbamail-subscribe-route` section.
+    ```{note}
+    Take a look to the {ref}`acumbamail-subscribe-route` section.
+    ```
 
 batchAddSubscribers
     The {term}`Acumbamail` API function used to add a new subscriber to a mailing list.
 
-    **Tip:** More infomation checkout the official [batchAddSubscribers/](https://acumbamail.com/apidoc/function/batchAddSubscribers/) documentation.
+    ```{tip}
+    More infomation checkout the official [batchAddSubscribers/](https://acumbamail.com/apidoc/function/batchAddSubscribers/) documentation.
+    ```
 
 Subscriber
     A subscriber represents one contact registered in an {term}`Acumbamail` mailing list.

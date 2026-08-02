@@ -15,13 +15,13 @@ This part of the documentation contains how-to guides, including installation an
 
 - Control panel in {term}`Plone` registry to manage {term}`Acumbamail Settings`.
 
-- RestApi endpoint that exposes the {term}`Acumbamail Settings` for {term}`Volto` _integration_.
+- A Restricted RESTful API endpoint that exposes the {term}`Acumbamail Settings` for {term}`Volto` _integration_.
 
 - Add {term}`batchAddSubscribers` endpoint support to new subscriber to the {term}`Acumbamail` list.
 
 ## Plone CMS integration
 
-To use this product in {term}`Plone` CMS, you needs to include the following {term}`add-on` in your project: {term}`collective.volto.acumbamail`
+To use this product in {term}`Plone` CMS, you needs to include the following {term}`add-on` in your project: {term}`collective.volto.acumbamail`.
 
 ## Translations
 
@@ -43,12 +43,17 @@ This product has been translated into
 
 ## Install it
 
-To install your project, you must choose the method appropriate to your version of {term}`Volto`.
+To install in your project, the {term}`volto-acumbamail` {term}`add-on`, you must choose the method appropriate
+to your version of {term}`Volto`.
 
 
 ### Volto 18 and later
 
-Add `volto-acumbamail` to your `package.json`:
+```{warning}
+Just for the {term}`Volto` 18 and later versions project installation.
+```
+
+Add {term}`volto-acumbamail` to your `package.json` file:
 
 ```json
 "addons": [
@@ -79,11 +84,11 @@ If you trying to install from Github you need edit the `mrs.developer.json` file
 }
 ```
 
-The `mrs.developer.json` is using by an NodeJS utility called `mrs.developer` that makes
-it easy to work with NPM projects containing lots of packages, of which you only want to
+The `mrs.developer.json` file is using by an `NodeJS` utility called `mrs.developer` that makes
+it easy to work with `NPM` projects containing lots of packages, of which you only want to
 develop some.
 
-Also add `volto-acumbamail` to your `package.json`:
+Also add {term}`volto-acumbamail` to your `package.json` file:
 
 ```json
 "addons": [
@@ -101,7 +106,11 @@ Also add `volto-acumbamail` to your `package.json`:
 
 ### Volto 17 and earlier
 
-Create a new Volto project (you can skip this step if you already have one):
+```{warning}
+Just for the {term}`Volto` 17 and earlier versions project installation.
+```
+
+Create a new {term}`Volto` project (you can skip this step if you already have one):
 
 ```
 npm install -g yo @plone/generator-volto
@@ -109,7 +118,7 @@ yo @plone/volto my-volto-project --addon volto-acumbamail
 cd my-volto-project
 ```
 
-Add `volto-acumbamail` to your package.json:
+Add {term}`volto-acumbamail` to your `package.json` file:
 
 ```json
 "addons": [
@@ -121,7 +130,7 @@ Add `volto-acumbamail` to your package.json:
 }
 ```
 
-Download and install the new add-on by running:
+Download and install the new {term}`add-on` by running:
 
 ```shell
 yarn install
@@ -135,9 +144,8 @@ yarn start
 
 ## Enable it
 
-Go to the `Site setup`, next to the `Add-ons` control panel, find the {term}`collective.volto.acumbamail` add-on and click on the `Install` button.
-
-Visit http://localhost:3000/ in a browser, login, enabled the {term}`add-on` and check the awesome new features.
+Visit http://localhost:3000/ in a browser, login, so go to the `Site setup`, next to the `Add-ons` control panel, 
+find the {term}`collective.volto.acumbamail` {term}`add-on` and click on the `Install` button for enabled it.
 
 ## Settings it
 
@@ -159,5 +167,5 @@ In this control panel, you can configure the following fields:
 
 ## Use it
 
-To use the {term}`Acumbamail` integration you need add the {term}`volto-acumbamail` {term}`add-on`, in your {term}`Volto` project and
-use the amazain features incluided.
+To use the {term}`Acumbamail` integration you need add the {term}`volto-acumbamail` {term}`add-on`, in
+your {term}`Volto` project and use the amazain features incluided.

@@ -1,8 +1,8 @@
 ---
 myst:
   html_meta:
-    "description": "A volto add-on that integrates Acumbamail service with Volto"
-    "property=og:description": "A volto add-on that integrates Acumbamail service with Plone"
+    "description": "An integration for the Acumbamail service with Volto"
+    "property=og:description": "An integration for the Acumbamail service with Plone"
     "property=og:title": "Acumbamail integration with Volto"
     "keywords": "Acumbamail, service, Volto, integration, documentation"
 ---

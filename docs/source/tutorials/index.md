@@ -110,7 +110,9 @@ X-Powered-By: Zope (www.zope.dev), Python (www.python.org)
 
 That means you were updated the values in the {term}`Acumbamail Settings` control panel fields correctly!
 
-**NOTE:** You can validate the update operation, going to ``Site setup > Add-on Settings > Acumbamail Settings``.
+```{note}
+You can validate the update operation, going to ``Site setup > Add-on Settings > Acumbamail Settings``.
+```
 
 ---
 
@@ -132,4 +134,6 @@ curl -i -X POST http://localhost:8080/Plone/@acumbamail-subscribe \
 
 This `route` can be used in for a {term}`Volto` _integration_ form componet.
 
-**NOTE:** You can validate the add operation, going to your {term}`Acumbamail` Dashboard account.
+```{note}
+You can validate the add operation, going to your {term}`Acumbamail` Dashboard account.
+```

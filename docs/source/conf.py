@@ -325,7 +325,7 @@ tippy_props = {
 # -- Options for HTML help output -------------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "Volto AcumbamailDocumentation"
+htmlhelp_basename = "Acumbamail_integration_with_Volto_Documentation"
 
 
 # -- Options for LaTeX output -------------------------------------------------
@@ -337,7 +337,7 @@ latex_documents = [
         "index",
         "Volto AcumbamailDocumentation.tex",
         "Volto Acumbamail Documentation",
-        "collective community",
+        author,
         "manual",
     ),
 ]

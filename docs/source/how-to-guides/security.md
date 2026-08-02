@@ -22,6 +22,10 @@ The {term}`volto-acumbamail` {term}`add-on` reusing the following roles and perm
 
   - ``Acumbamail`` role.
 
+    ```{tip}
+    If to grant this role to a user, this inherited the permissions that included, and there are details bellow:
+    ```
+
 - The ``Plone Site Setup: Overview`` permission grants access to the `Site Setup: Overview ` view to the following roles:
 
   - The ``Manager`` role.

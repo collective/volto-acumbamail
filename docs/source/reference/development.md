@@ -9,14 +9,14 @@ myst:
 
 # Development
 
-The development of this  {term}`add-on` is done in isolation using a new approach using pnpm workspaces and latest `mrs-developer` and other Volto core improvements.
+The development of this  {term}`add-on` is done in isolation using a new approach using pnpm workspaces and latest `mrs-developer` and other {term}`Volto` core improvements.
 For this reason, it only works with pnpm and {term}`Volto` 18 (currently in alpha).
 
 ## Prerequisites ✅
 
 -   An [operating system](https://6.docs.plone.org/install/create-project-cookieplone.html#prerequisites-for-installation) that runs all the requirements mentioned.
 -   [nvm](https://6.docs.plone.org/install/create-project-cookieplone.html#nvm)
--   [Node.js and pnpm](https://6.docs.plone.org/install/create-project.html#node-js) 22
+-   [Node.js and pnpm](https://6.docs.plone.org/install/create-project-cookieplone.html#node-js) 22
 -   [Make](https://6.docs.plone.org/install/create-project-cookieplone.html#make)
 -   [Git](https://6.docs.plone.org/install/create-project-cookieplone.html#git)
 -   [Docker](https://docs.docker.com/get-started/get-docker/) (optional)
