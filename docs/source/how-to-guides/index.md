@@ -9,7 +9,7 @@ myst:
 
 # General information
 
-This part of the documentation contains how-to guides, including installation and usage.
+This part of the documentation contains how-to guides, and including installation and usage.
 
 ## Features
 
@@ -17,15 +17,16 @@ This part of the documentation contains how-to guides, including installation an
 
 - A Restricted RESTful API endpoint that exposes the {term}`Acumbamail Settings` for {term}`Volto` _integration_.
 
-- Add {term}`batchAddSubscribers` endpoint support to new subscriber to the {term}`Acumbamail` list.
+- A Restricted RESTful API endpoint that support the {term}`Acumbamail`'s {term}`batchAddSubscribers` endpoint to add a new subscriber to the list.
 
 ## Plone CMS integration
 
-To use this product in {term}`Plone` CMS, you needs to include the following {term}`add-on` in your project: {term}`collective.volto.acumbamail`.
+To use this product in {term}`Plone` CMS, you needs to include the following {term}`add-on`
+in your project: {term}`collective.volto.acumbamail`.
 
 ## Translations
 
-This product has been translated into
+This product support the following languages:
 
 - Basque
 
@@ -39,7 +40,7 @@ This product has been translated into
 
 ## Compatibility
 
-- Tested with Node.js 22.16.0 and {term}`Volto` 18.
+- Tested with `Node.js` 22.16.0 and {term}`Volto` 18.
 
 ## Install it
 
@@ -136,7 +137,7 @@ Download and install the new {term}`add-on` by running:
 yarn install
 ```
 
-Start volto with:
+Start {term}`Volto` with:
 
 ```shell
 yarn start
@@ -144,8 +145,8 @@ yarn start
 
 ## Enable it
 
-Visit http://localhost:3000/ in a browser, login, so go to the `Site setup`, next to the `Add-ons` control panel, 
-find the {term}`collective.volto.acumbamail` {term}`add-on` and click on the `Install` button for enabled it.
+Visit http://localhost:3000/ in a browser, login, so go to `Site setup`, next to `Add-ons` control panel, 
+find the {term}`collective.volto.acumbamail` {term}`add-on` and select the `Install` button for enabled it.
 
 ## Settings it
 
@@ -159,13 +160,13 @@ This {term}`Acumbamail Settings`, you can access the control panel, as shown bel
 
 In this control panel, you can configure the following fields:
 
-- {term}`API URL`, The URL of the {term}`Acumbamail` API endpoint.
+- {term}`API URL`, The address of the {term}`Acumbamail` API endpoint.
 
 - {term}`API Key`, Your personal token generated at the {term}`Acumbamail` Dashboard website.
 
-- {term}`List ID`, Numeric identifier of the list where subscribers will be added.
+- {term}`List ID`, Numeric identifier of the subscribers list.
 
 ## Use it
 
 To use the {term}`Acumbamail` integration you need add the {term}`volto-acumbamail` {term}`add-on`, in
-your {term}`Volto` project and use the amazain features incluided.
+your {term}`Volto` project and use the amazing features into this {term}`add-on`.

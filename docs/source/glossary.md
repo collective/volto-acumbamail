@@ -17,17 +17,25 @@ This glossary provides terms and definitions relevant to {term}`Acumbamail` inte
 :sorted: true
 
 Acumbamail
-    [Acumbamail](https://acumbamail.com/) is a cloud-based Email Marketing and Marketing Automation platform.
+    `Acumbamail` is a cloud-based Email Marketing and Marketing Automation platform.
     It provides services such as newsletter management, contact and subscriber management, marketing automation,
     subscription forms, landing pages, transactional email, SMS campaigns, and campaign analytics.
-    When integrated with {term}`Plone` and {term}`Volto`, it can be used to collect subscribers, synchronize contacts, automate
-    email campaigns, and personalize communications based on user interactions.
+    When integrated with {term}`Plone` and {term}`Volto`, it can be used to collect subscribers, synchronize
+    contacts, automate email campaigns, and personalize communications based on user interactions.
+
+    ```{tip}
+    More infomation checkout the official [documentation](https://acumbamail.com/).
+    ```
 
 Plone
     [Plone](https://plone.org/) is an open-source content management system that is used to create, edit, and
     manage digital content, like websites, intranets and custom solutions. It comes with over 20 years of growth,
     optimisations, and refinements. The result is a system trusted by governments, universities, businesses, and
     other organisations all over the world.
+
+    ```{tip}
+    Plone` acts as the backend intermediary between the {term}`Acumbamail` service and the {term}`Volto` frontend.
+    ```
 
 Volto
     [Volto](https://github.com/plone/volto) is the default React-based frontend for {term}`Plone` 6.
@@ -75,7 +83,7 @@ Registry
 
 GenericSetup
     A {term}`Plone` framework for managing configuration through filesystem-based import and export profiles.
-    {term}`collective.volto.acumbamail` uses a GenericSetup profile to register its registry records and control panel on installation.
+    {term}`collective.volto.acumbamail` uses a `GenericSetup` profile to register its registry records and control panel on installation.
 
 collective.volto.acumbamail
     `collective.volto.acumbamail` is the {term}`Plone` {term}`add-on` that integrates {term}`Acumbamail` sevice into a {term}`Plone` site.
@@ -129,7 +137,7 @@ list_id
     ```
 
 @acumbamail-subscribe
-    A REST API endpoint exposed by {term}`collective.volto.acumbamail` that allows {term}`Volto` to add a new subscriber to the configured {term}`Acumbamail` list.
+    A REST API endpoint exposed by {term}`collective.volto.acumbamail` {term}`add-on` that allows {term}`Volto` to add a new subscriber to the configured {term}`Acumbamail` list.
     It wraps the {term}`batchAddSubscribers` {term}`Acumbamail` API function.
 
     ```{note}

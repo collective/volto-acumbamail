@@ -14,11 +14,21 @@ The {term}`volto-acumbamail` {term}`add-on` reusing the following roles and perm
 
 ## Roles
 
-- ``Acumbamail`` role (**NEW!!!**).
+- ``Acumbamail`` role.
+
+  ```{note}
+  New feature inclueded in this {term}`add-on`.
+  ```
 
 ## Permissions
 
-- ``volto.acumbamail: Manage Acumbamail Settings`` permission (**NEW!!!**) grants access to the following roles:
+- ``volto.acumbamail: Manage Acumbamail Settings``
+
+  ```{note}
+  New feature inclueded in this {term}`add-on`.
+  ```
+
+  This permission grants access to the following roles:
 
   - ``Acumbamail`` role.
 

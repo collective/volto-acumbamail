@@ -239,7 +239,7 @@ autodoc_class_signature = "separated"
 # -- Options for sphinx_sitemap to html -----------------------------
 
 # Used by sphinx_sitemap to generate a sitemap
-html_baseurl = "https://volto-acumbamail.readthedocs.io/"
+html_baseurl = "https://volto-acumbamail.readthedocs.io/en/latest/"
 # https://sphinx-sitemap.readthedocs.io/en/latest/advanced-configuration.html#customizing-the-url-scheme
 sitemap_url_scheme = "{link}"
 sitemap_filename = "sitemap-custom.xml"
@@ -251,7 +251,7 @@ sitemap_filename = "sitemap-custom.xml"
 myst_enable_extensions = [
     "attrs_block",  # Support parsing of block attributes.
     "attrs_inline",  # Support parsing of inline attributes.
-    "colon_fence",  # You can also use ::: delimiters to denote code fences, instead of ```.  ## noqa: E501
+    "colon_fence",  # You can also use ::: delimiters to denote code fences, instead of ```.  # noqa: E501
     "deflist",  # Support definition lists. https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists
     "html_image",  # For inline images. See https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#html-images
     "linkify",  # Identify "bare" web URLs and add hyperlinks.
@@ -287,9 +287,9 @@ mermaid_version = "11.2.0"
 
 
 # -- OpenGraph configuration ----------------------------------
-ogp_site_url = "https://volto-acumbamail.readthedocs.io/"
+ogp_site_url = "https://volto-acumbamail.readthedocs.io/en/latest/"
 ogp_description_length = 200
-ogp_image = "https://volto-acumbamail/en/latest/_static/logo.svg"
+ogp_image = "https://volto-acumbamail.readthedocs.io/en/latest/_static/logo.svg"
 ogp_site_name = "Acumbamail integration with Volto Documentation"
 ogp_type = "website"
 ogp_custom_meta_tags = [
@@ -335,8 +335,8 @@ htmlhelp_basename = "Acumbamail_integration_with_Volto_Documentation"
 latex_documents = [
     (
         "index",
-        "Volto AcumbamailDocumentation.tex",
-        "Volto Acumbamail Documentation",
+        "Acumbamail_integration_with_Volto_Documentation.tex",
+        "Acumbamail integration with Volto Documentation",
         author,
         "manual",
     ),
